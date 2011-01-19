@@ -3,5 +3,6 @@ bin/*
 build/*
 lib/*
 include/*
-pip-log.txt 
+pip-log.txt
 site.log
+site/deploy/*
