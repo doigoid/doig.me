@@ -1,0 +1,32 @@
+{% extends "_post.html" %}
+
+{%hyde
+    title: "Initial Commit"
+    created: 2010-10-12 18:09:05
+    color: [200,100,30]
+    bg_photo: "http://farm5.static.flickr.com/4070/4328618711_65f6338a1b_o.jpg"
+    bg_author_url: "http://www.flickr.com/photos/28481088@N00/"
+    bg_author_name: "tanakawho"
+    bg_license: "http://creativecommons.org/licenses/by/2.0/"
+    bg_license_name: "CC BY 2.0"
+%}
+
+{% block article %}
+
+{% excerpt %}
+
+Initial commit (literally) for my personal website, one that's maintained using Git and generated with Hyde.
+
+{% endexcerpt %}
+
+Hello and welcome to my new blog! 
+
+At the moment, I hoping that this blog will host an array of interesting yet-to-be-written articles covering topics ranging from web development to indie music and everything in between.
+
+When creating this site I was looking for something that was simplistic to administrate but also technically interesting enough to tickle my engineering side. What I've settled upon is something I am very pleased with. 
+
+The two most important tools in my toolbox (debatedly) are [Python](http://python.org) and [Git](http://gitscm.org). These are two technologies that I use daily and are my primary means of creating digital things. The pages you're able to view on this website are good 'ol fashioned static files. The files are generated using [Lakshmi Vyas'](http://ringce.com/blog) [Hyde - The Python Static Site Generator](http://github.com/lakshmivyas/hyde), written in the [Markdown](http://daringfireball.net/projects/markdown/) formatting syntax, and deployed to this server using a set of simple Git post-commit hooks.
+
+I've released the source code of this website under an AGPL license, available on [Github](https://github.com/doigoid/doig.me). I'm planning on writing a tutorial of sorts, on how you can easily set up a staticly generated website yourself. Thanks for reading, I hope to see you back soon!
+
+{% endblock %}

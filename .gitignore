@@ -6,3 +6,4 @@ include/*
 pip-log.txt
 site.log
 site/deploy/*
+src/*

@@ -1,0 +1,19 @@
+{% extends "skeleton/_body.html"%}
+
+{%hyde
+    bg_photo: "http://farm1.static.flickr.com/25/67877047_a4ab5e3c4a_o.jpg"
+    bg_author_url: "http://www.flickr.com/photos/belljar/"
+    bg_author_name: "madamepsychosis"
+    bg_license: "http://creativecommons.org/licenses/by-nc-nd/2.0/"
+    bg_license_name: "CC BY-NC-ND 2.0"
+%}
+
+{% block content_header %}{% endblock %}
+{% block content_body %}
+<div class="page-listing">
+<h1 class="title">{{ page.title }}</h1>
+{% for node in page.node.walk %}
+{% include "skeleton/_innerlisting.html" %}
+{% endfor %}
+</div>
+{% endblock %}

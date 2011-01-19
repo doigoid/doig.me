@@ -1,0 +1,54 @@
+{% extends "skeleton/_body.html" %}
+{%hyde
+    title: "home"
+    created: 2010-10-12 18:09:05
+    color: [17,80,138]
+    listing: True
+
+    bg_photo: "http://farm3.static.flickr.com/2179/1580629942_376e40328a_b.jpg"
+    bg_author_url: "http://www.flickr.com/photos/28481088@N00/"
+    bg_author_name: "tanakawho"
+    bg_license: "http://creativecommons.org/licenses/by/2.0/"
+    bg_license_name: "CC BY 2.0"
+%}
+
+{% block content_body %}
+  <div class="banner">
+    <img src="/media/img/front-banner.jpg" />
+  </div>
+  <div id="elsewhere">
+    <small class="fontify">ALSO @ [ </small>
+    <a href="http://twitter.com/jed3" rel="me"><img src="/media/img/icons/twitter.gif" /></a>
+    <a href="https://github.com/doigoid" rel="me"><img src="/media/img/icons/github.png" /></a>
+    <a href="http://last.fm/user/jed3" rel="me"><img src="/media/img/icons/lastfm.gif" /></a>
+    <a href="http://news.ycombinator.com/user?id=JED3" rel="me"><img src="/media/img/icons/hn.gif" /></a>
+    <a href="http://reddit.com/user/doigoid" rel="me"><img src="/media/img/icons/reddit.gif" /></a>
+    <a href="http://flickr.com/photos/doigoid/" rel="me"><img src="/media/img/icons/flickr.gif" /></a>
+    <a href="http://www.linkedin.com/pub/john-doig/5/7b9/537" rel="me"><img src="/media/img/icons/linkedin.gif" /></a>
+    <a href="http://www.pandora.com/people/johndoig" rel="me"><img src="/media/img/icons/pandora.gif" /></a>
+    <a href="http://www.youtube.com/user/NegativeSource" rel="me"><img src="/media/img/icons/youtube.gif" /></a>
+    <a href="https://creativecommons.net/johndoig/" rel="me"><img src="/media/img/icons/cc.gif" /></a>
+    <small class="fontify"> ]</small>
+  </div>
+{%recent_posts recent 1 %}
+{%for post in recent %}
+<div class="post">
+  <div class="entry">
+    {% if forloop.first %}
+    <h3>Latest Entries</h3>
+    <div class="entry-content">
+      <a href="{{ post.url }}">
+        <h1 class="title">{{ post.title }}</h1>
+        <h3 class="post-date">{{ page.created|date:"D d M Y"}}</h3>
+      </a>
+      <p>{% render_excerpt post %}</p>
+      <p><a href="{{ post.url }}">Read more.</a></p>
+    </div>
+    {% else %}
+    {% endif %}
+  </div>
+</div>
+<div class="clear"></div>
+{%endfor%}
+
+{%endblock%}
