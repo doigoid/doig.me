@@ -15,6 +15,8 @@
 	<title>{% block title %}{% endblock %}</title>
 	{% block feeds %}
 	<link href="{{site.url}}atom.xml" rel="alternate" title="{{site.name}}" type="application/atom+xml"/>
+    <link rel="openid.server" href="https://creativecommons.net/openid/provider" /> 
+    <link rel="openid.delegate" href="https://creativecommons.net/johndoig/" />
 	{% endblock %}
 	{% block css %}
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:extralight,light&subset=latin' rel='stylesheet' type='text/css'>
