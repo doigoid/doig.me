@@ -3,7 +3,12 @@
 html { height:100%; }
 body { 
   padding:0; margin:0; height:100%;
-  background:#333  top right fixed; background-size:100%; -moz-background-size:100%; }
+  background:#333  top right fixed; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
 
 a, a:visited, a:active { color:#333; text-decoration:none; }
 h1,h2,h3,h4,h5,.fontify { font-family:'Yanone Kaffeesatz', "Helvetica Neue"; font-weight:200; }
@@ -74,7 +79,8 @@ body.page #post-content p, body.page .entry-content p { text-align:left; }
 
 #post-content, .padded-content, .page-listing { padding:20px 70px; }
 #elsewhere { padding:20px 70px 0px 70px; margin:0px; }
-#elsewhere a img { border:0; height:16px; width:16px; margin:3px 1px; vertical-align:top; }
+.favicon { border:0; height:16px; width:16px; margin:3px 1px; vertical-align:top; }
+
 .clear { clear:both; }
 .fixed { position:fixed; }
 #cc-notice { 
