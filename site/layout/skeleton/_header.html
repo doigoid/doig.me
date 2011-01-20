@@ -7,9 +7,10 @@
 <div id="nav">
   <ul>
     <li{% if page.url == "/p" or "/p/" in page.url %} class="active"{% endif %}><a rel="foaf:weblog" href="/p/">weblog</a></li>
-    <li{% ifequal page.url "/projects" %} class="active"{% endifequal %}><a href="/projects">projects</a></li>
+    {#<li{% ifequal page.url "/projects" %} class="active"{% endifequal %}><a href="/projects">projects</a></li>#}
     <li{% ifequal page.url "/about" %} class="active"{% endifequal %}><a href="/about">about</a></li>
     <li{% ifequal page.url "/resume" %} class="active"{% endifequal %}><a href="/resume">resume</a></li>
+    <li><a href="http://feeds.feedburner.com/doig">feed</a></li>
   </ul>
 </div>
 <div id="top">&nbsp;</div>

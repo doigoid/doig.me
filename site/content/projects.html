@@ -1,7 +1,8 @@
 {% extends "_page.html" %}
 {%hyde
     title: "Projects"
-    bg_photo: "http://farm1.static.flickr.com/154/380173157_dd6a416379_o.jpg"
+    color: [156,65,39]
+    bg_photo: "http://farm1.static.flickr.com/154/380173157_dd6a416379_b.jpg"
     bg_author_url: "http://www.flickr.com/photos/tjt195/"
     bg_author_name: "tjt195"
     bg_license: "http://creativecommons.org/licenses/by/2.0/"
@@ -9,6 +10,18 @@
 %}
 {% block article %}
 
-These are my projects.
-    
+Creative Commons REST API
+--------------
+Creative Commons provides a REST web service interface. Through the CC web service API, you can generate any of the Creative Commons licenses, including CC0 and the Public Domain Mark. 
+
+[Project page](http://api.creativecommons.org/docs), [code repository](http://code.creativecommons.org/viewgit/cc.api.git/)
+
+Crowdplay
+--------------
+Crowdplay is a web application where listeners of an online radio station can request songs that they'd like to hear. Other listeners are then able to vote on those requests so that a playlist consensus can be made. The web application serves as an interface to an Icecast streaming server. 
+
+[Project page](http://github.com/doigoid/crowdplay)
+
+
+
 {% endblock %}
