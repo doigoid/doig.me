@@ -78,7 +78,7 @@ p, li, span {
 body.page #post-content p, body.page .entry-content p { text-align:left; }
 
 #post-content, .padded-content, .page-listing { padding:20px 70px; }
-#elsewhere { padding:20px 70px 0px 70px; margin:0px; }
+#elsewhere { line-height:22px; padding:20px 70px 0px 70px; margin:0px; }
 .favicon { border:0; height:16px; width:16px; margin:3px 1px; vertical-align:top; }
 
 .clear { clear:both; }
