@@ -571,8 +571,12 @@ video {
   height: 100vh;
 }
 
-.max-w-80 {
-  max-width: 20rem;
+.w-80 {
+  width: 20rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .flex-col {
