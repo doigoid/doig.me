@@ -1,9 +1,1 @@
-*.pyc
-bin/*
-build/*
-lib/*
-include/*
-pip-log.txt
-site.log
-site/deploy/*
 node_modules
