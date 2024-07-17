@@ -567,8 +567,8 @@ video {
   height: 1.25rem;
 }
 
-.h-screen {
-  height: 100vh;
+.h-svh {
+  height: 100svh;
 }
 
 .w-80 {
